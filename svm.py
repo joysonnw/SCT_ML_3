@@ -42,7 +42,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 print("Training LinearSVC...")
 base_svm = LinearSVC(max_iter=5000, verbose=1)
 
-# Wrap in CalibratedClassifierCV if you need predict_proba
 svm = CalibratedClassifierCV(base_svm)
 
 svm.fit(X_train, y_train)
