@@ -34,12 +34,12 @@ def load_data(data_dir):
     return np.array(X), np.array(y)
 
 
-print("Loading data...")
+print("Loading data.")
 X, y = load_data(DATA_DIR)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-print("Training LinearSVC...")
+print("Training LinearSVC.")
 base_svm = LinearSVC(max_iter=5000, verbose=1)
 
 svm = CalibratedClassifierCV(base_svm)
