@@ -8,7 +8,7 @@ from sklearn.metrics import classification_report, accuracy_score
 from skimage.feature import hog
 
 IMG_SIZE = 128  
-DATA_DIR = r"C:\Users\nwjoy\OneDrive\Documents\SkillCraft\SCT-3\PetImages"  
+DATA_DIR = r"PetImages"  
 
 def load_data(data_dir):
     X, y = [], []
